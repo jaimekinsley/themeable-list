@@ -1,7 +1,9 @@
 import React from 'react';
-import { useCharacters } from '../../hooks/appContext';
+import { useCharacters, useTheme } from '../../hooks/appContext';
+import styles from './Characters.css';
 
 const Characters = () => {
+  const theme = useTheme();
   const characters = useCharacters();
 
   if(!characters) return <h2>Loading...</h2>;
