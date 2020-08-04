@@ -1,7 +1,7 @@
 import React, { useReducer, useEffect } from 'react';
 import { AppContext } from '../hooks/appContext';
 import reducer, { initialState } from '../reducers/appReducer';
-import { fetchCharacters } from '../services/lastAirBenderAPI';
+import { fetchCharacters } from '../services/lastAirbenderAPI';
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
