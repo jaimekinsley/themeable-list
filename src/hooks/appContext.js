@@ -7,15 +7,20 @@ export const useCharacters = () => {
   return state.characters;
 };
 
+// export const useState = () => {
+//   const { state } = useContext(AppContext);
+//   return state;
+// };
+
 export const useDispatch = () => {
   const { dispatch } = useContext(AppContext);
   return dispatch;
 };
 
 export const usePagination = () => {
-  const { state } = useContext(AppContext);
   const dispatch = useDispatch();
-
+  const { state } = useContext(AppContext);
+  
   const prevPage = () => {
     dispatch({ type: 'DECREASE_PAGE' });
   };

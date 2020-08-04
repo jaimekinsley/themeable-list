@@ -5,7 +5,7 @@ import AppProvider from './providers/AppProvider';
 
 render(
   <AppProvider>
-  <App />
+    <App />
   </AppProvider>,
   document.getElementById('root')
 );
