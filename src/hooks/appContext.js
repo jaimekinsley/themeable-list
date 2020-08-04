@@ -23,3 +23,8 @@ export const usePagination = () => {
   }
   return { page: state.page, nextPage, prevPage };
 }
+
+export const useTheme = () => {
+  const { state } = useContext(AppContext);
+  return state.theme;
+}
